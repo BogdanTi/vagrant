@@ -33,5 +33,8 @@ systemctl start mysqld
 mysql -u root -e "SHOW DATABASES";
 
 #Download Starter content
+cd /vagrant
+sudo -u vagrant wget -q https://raw.githubusercontent.com/BogdanTi/vagrant/main/files/index.html
+sudo -u vagrant wget -q https://raw.githubusercontent.com/BogdanTi/vagrant/main/files/info.php
 
 systemctl restart httpd
